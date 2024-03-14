@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $hello='Hello World!';
+    $hello=config('variables.hello');
+    $subtitle=config('variables.subtitle');
 
-    return view('homepage', compact('hello'));
+    return view('homepage', compact('hello','subtitle'));
 });

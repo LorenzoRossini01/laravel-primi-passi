@@ -7,5 +7,6 @@
 </head>
 <body>
     <h1>{{$hello}}</h1>
+    <h3>{{$subtitle}}</h3>
 </body>
 </html>
